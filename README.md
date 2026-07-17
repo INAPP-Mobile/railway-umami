@@ -1,6 +1,6 @@
 # Deploy and Host Umami Analytics on Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/umami)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/umami-2)
 
 Umami is a simple, fast, privacy-focused alternative to Google Analytics. One-click deploy on Railway with a PostgreSQL companion database.
 
