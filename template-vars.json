@@ -1,0 +1,17 @@
+{
+  "DATABASE_URL": {
+    "defaultValue": "postgresql://postgres:postgres@postgres.railway.internal:5432/umami",
+    "description": "PostgreSQL connection string. Points at the sibling 'postgres' Railway service in this template.",
+    "isOptional": false
+  },
+  "HASH_SALT": {
+    "defaultValue": "${{secret(32)}}",
+    "description": "Secret salt used for hashing. Auto-generated random value. Rotate this in the dashboard before production.",
+    "isOptional": false
+  },
+  "PORT": {
+    "defaultValue": "3000",
+    "description": "Port Umami listens on (default: 3000).",
+    "isOptional": true
+  }
+}

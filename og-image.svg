@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1b1e"/>
+  <!-- Analytics chart graphic -->
+  <g transform="translate(200,200)">
+    <!-- X-axis -->
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#6B7280" stroke-width="12" stroke-linecap="round"/>
+    <!-- Y-axis -->
+    <line x1="0" y1="200" x2="0" y2="0" stroke="#6B7280" stroke-width="12" stroke-linecap="round"/>
+    <!-- Chart line -->
+    <path d="M 40 160 L 120 100 L 200 140 L 300 40" stroke="#9F40FF" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Data points -->
+    <circle cx="40" cy="160" r="16" fill="#6B7280"/>
+    <circle cx="120" cy="100" r="16" fill="#6B7280"/>
+    <circle cx="200" cy="140" r="16" fill="#6B7280"/>
+    <circle cx="300" cy="40" r="16" fill="#6B7280"/>
+  </g>
+  <!-- Text -->
+  <text x="750" y="315" font-family="Arial,sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">Umami</text>
+  <text x="750" y="400" font-family="Arial,sans-serif" font-size="48" fill="#9F40FF" text-anchor="middle">on Railway</text>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "POSTGRES_USER": {
+    "value": "postgres",
+    "description": "Postgres superuser name. Umami connects with these credentials."
+  },
+  "POSTGRES_PASSWORD": {
+    "value": "postgres",
+    "description": "Postgres password. Default literal 'postgres' so a fresh marketplace deploy authenticates out of the box. Rotate this in the dashboard AND update the Umami DATABASE_URL to match before production."
+  },
+  "POSTGRES_DB": {
+    "value": "umami",
+    "description": "Initial database created on first boot. Must match the database name in Umami's DATABASE_URL."
+  },
+  "PGDATA": {
+    "value": "/var/lib/postgresql/data",
+    "description": "Postgres data directory inside the mounted volume. Must be a subpath of the volume mount path /var/lib/postgresql — this geometry places the volume's lost+found/ at /var/lib/postgresql/lost+found (outside PGDATA), so initdb sees an empty directory and proceeds. DO NOT change this without also changing the volume mount path."
+  }
+}
