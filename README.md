@@ -36,12 +36,18 @@ Umami is one of the most popular open-source analytics solutions because it offe
 3. Multiple Sites — manage analytics for many websites from one dashboard
 4. Open Source Projects — self-hosted analytics for your projects
 
-## Dependencies for Running This Template
+## Dependencies for Umami
 
-This template provisions two services automatically:
+### Deployment Dependencies
 
-- **Umami** — the web app container (`ghcr.io/umami-software/umami:postgresql-latest`)
-- **PostgreSQL 16** — a sibling `postgres` service on `postgres.railway.internal:5432`
+The template deploys two services:
+
+| Service | Path | Description |
+|---------|------|-------------|
+| `umami` | `Dockerfile` | Analytics web app on port 3000 (`ghcr.io/umami-software/umami:postgresql-latest`) |
+| `postgres` | `postgres/Dockerfile` | PostgreSQL 16 (Alpine) sibling with persistent volume at `/var/lib/postgresql` (PGDATA=`/var/lib/postgresql/data`) |
+
+The Railway dashboard creates both services automatically when this template deploys. No external database or third-party service is required.
 
 ## Configuration
 
